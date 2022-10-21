@@ -4,9 +4,14 @@
   "private": true,
   "description": "Code exercise solutions.",
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch --stats=minimal --mode=development --devtool=source-map",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.25.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^7.1.0",
@@ -18,6 +23,11 @@
     "react": "^18.2.0",
     "stylelint": "^14.14.0",
     "stylelint-config-recommended": "^9.0.0",
-    "stylelint-config-standard": "^27.0.0"
+    "stylelint-config-standard": "^27.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
   }
 }
