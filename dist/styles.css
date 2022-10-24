@@ -1,3 +1,54 @@
-h1 {
-  font-weight: 400;
+* {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.95rem;
+}
+
+body {
+  background-color: hsl(30deg 38% 92%);
+  color: hsl(212deg 21% 14%);
+}
+
+.container {
+  border-radius: 1.125rem;
+  margin: 0.8rem;
+  background-color: hsl(228deg 12% 48%);
+  padding: 2rem;
+}
+
+h1,
+h3 {
+  color: white;
+  font-family: Merriweather, serif;
+  font-weight: 800;
+}
+
+.border-radius {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.padding-left {
+  padding-left: 0.5rem;
+}
+
+select {
+  padding: 0.5rem 6.5rem 0.5rem 0;
+}
+
+button {
+  background-color: hsl(212deg 21% 14%);
+  border-radius: 0.8rem;
+  border: none;
+  color: white;
+  padding: 0.3rem 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
