@@ -5,50 +5,69 @@
 
 body {
   background-color: hsl(30deg 38% 92%);
-  color: hsl(212deg 21% 14%);
+  color: rgb(11 28 80);
 }
 
 .container {
-  border-radius: 1.125rem;
-  margin: 0.8rem;
-  background-color: hsl(228deg 12% 48%);
+  background-color: #fff;
+  border-radius: 1rem;
   padding: 2rem;
 }
 
-h1,
-h3 {
-  color: white;
-  font-family: Merriweather, serif;
-  font-weight: 800;
-}
-
-.border-radius {
-  border-radius: 0.5rem;
-  border: none;
-}
-
-.padding-left {
-  padding-left: 0.5rem;
-}
-
 select {
-  padding: 0.5rem 6.5rem 0.5rem 0;
+  width: 88% !important;
+}
+
+input,
+select {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #0074d9;
+  padding: 10px;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #0074d9;
+  outline: none;
 }
 
 button {
-  background-color: hsl(212deg 21% 14%);
-  border-radius: 0.8rem;
+  margin: 20px auto 0;
+  width: 150px;
+  height: 50px;
+  background-color: #3647ca;
+  color: #fff;
+  font-size: 16px;
   border: none;
-  color: white;
-  padding: 0.3rem 2rem;
-}
-
-p {
-  margin: 0;
+  border-radius: 5px;
 }
 
 .button-holder {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+  text-align: center;
+}
+
+h1 {
+  /* font-family: Merriweather, serif; */
+  font-weight: 800;
+}
+
+.tip {
+  text-align: center;
+  font-size: 18px;
+  display: none;
+}
+
+@media screen and (min-width: 756px) {
+  .container {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
 }
