@@ -54,28 +54,24 @@ export default class TipCalc extends React.Component {
     return (
       <div className='container'>
         <h1>Tip Calculator:</h1>
-        <div className='row'>
-          <div className='column-half'>
-            <p>Bill</p>
-            <input className='border-radius padding-left'onChange={getAmount} id="bill-amount" type="text" placeholder="Bill Amount"></input>
-            <p>Select Tip %</p>
-            <select className='border-radius padding-left' onChange={getTipPercent} id="tip-options">
-              <option value="0.05">5%</option>
-              <option value="0.1">10%</option>
-              <option value="0.15">15%</option>
-              <option value="0.25">25%</option>
-              <option value="0.5">50%</option>
-            </select>
-            <p>Number of People</p>
-            <input className='border-radius padding-left' onChange={getNumberOfPeople} id="number-people" type="text" placeholder="0"></input>
-            <h3 style={{ display: this.state.tipDisplay }}>Tip Amount ${this.state.tipAmount} / per person</h3>
-          </div>
-          <div className='button-holder'>
-            <button onClick={tipCalculator}>Calculate!</button>
-            {/* <button >Reset</button> */}
-          </div>
+        <p>Bill</p>
+        <input className='border-radius padding-left'onChange={getAmount} id="bill-amount" type="text" placeholder="Bill Amount"></input>
+        <p>Select Tip %</p>
+        <select className='border-radius padding-left' onChange={getTipPercent} id="tip-options">
+          <option value="0.05">5%</option>
+          <option value="0.1">10%</option>
+          <option value="0.15">15%</option>
+          <option value="0.25">25%</option>
+          <option value="0.5">50%</option>
+        </select>
+        <p>Number of People</p>
+        <input className='border-radius padding-left' onChange={getNumberOfPeople} id="number-people" type="text" placeholder="0"></input>
 
+        <div className='button-holder'>
+          <button onClick={tipCalculator}>Calculate!</button>
+          {/* <button >Reset</button> */}
         </div>
+        <h3 className='tip' style={{ display: this.state.tipDisplay }}>Tip Amount ${this.state.tipAmount} / per person</h3>
       </div>
     );
   }
